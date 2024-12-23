@@ -404,6 +404,15 @@ section .button a:hover {
   background-color: #F97316;
 }
 
+
+section .button a:nth-child(3){
+  color: #D2A27C;
+  border:2px solid #D2A27C;
+}
+section .button a:nth-child(3):hover{
+  color: #fff;
+  background-color: #D2A27C;
+}
 /* about-me */
 
 section .about-me {
