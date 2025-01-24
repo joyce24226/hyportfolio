@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>타이핑 애니메이션</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    .typing-container {
+      font-size: 40px;
+      font-weight: bold;
+      display: inline-block;
+      position: relative;
+    }
+
+    .typing-text {
+      display: inline-block;
+    }
+
+    .typing-text span {
+      position: relative;
+      display: inline-block;
+      opacity: 0; /* 글자가 처음엔 보이지 않음 */
+      transform: translateY(10px); /* 타이핑 효과를 위해 약간 내려 놓음 */
+      background-color: transparent; /* 배경은 투명으로 시작 */
+      padding: 0 5px; /* 배경에 약간의 여백을 주어 텍스트와 배경이 겹치지 않게 */
+      transition: opacity 0.5s ease, transform 0.5s ease, background-color 1s ease-in-out; /* 배경 색 애니메이션 추가 */
+    }
+
+    .typing-text span.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* 타이핑 후 3초 후 배경 색을 서서히 나타나게 하기 */
+    .typing-text span.show-background {
+      background-color: yellow; /* 배경 색 변경 */
+    }
+  </style>
+</head>
+<body>
+  <div class="typing-container">
+    <span class="typing-text">Hello, World!</span>
+  </div>
+
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      const text = document.querySelector(".typing-text");
+      const textContent = text.textContent;
+      text.textContent = ''; // 초기화
+
+      let i = 0;
+      function type() {
+        if (i < textContent.length) {
+          const span = document.createElement("span");
+          span.textContent = textContent[i];
+          text.appendChild(span);
+          setTimeout(() => {
+            span.classList.add("show"); // 글자 애니메이션 적용
+          }, 100 * i); // 타이핑 속도 설정
+          i++;
+          setTimeout(type, 100); // 타이핑 효과 반복
+        }
+      }
+
+      // 타이핑 효과 시작
+      type();
+
+      // 타이핑 애니메이션이 끝난 후 3초 후에 배경 색상 나타나게 하기
+      setTimeout(() => {
+        const spans = document.querySelectorAll(".typing-text span");
+        spans.forEach(span => {
+          span.classList.add("show-background"); // 타이핑 후 3초 뒤 배경 색을 나타나게
+        });
+      }, textContent.length * 100 + 3000); // 타이핑 후 3초 뒤 배경 색 변화
+    });
+  </script>
+</body>
+</html>
