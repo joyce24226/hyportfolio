@@ -451,7 +451,7 @@ section{
   background: #fff;
   position: relative;
 }
-
+.progress-area p {text-align: left;}
 .progress {
   position: absolute;
   width: 80%;
