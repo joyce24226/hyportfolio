@@ -431,7 +431,7 @@ section{
 
 .about-me .inner .skill ul li .skill-img {
   width: 40px;
-  margin-left: 10%;
+  margin-left: 5%;
 }
 
 .about-me .inner .skill ul li .skill-img img {
@@ -452,7 +452,9 @@ section{
   background: #fff;
   position: relative;
 }
-.progress-area p {text-align: left;}
+section.about-me .skill .progress-area p {
+  text-align: left;
+}
 .progress {
   position: absolute;
   width: 80%;
