@@ -381,7 +381,7 @@ section{
 
 .about-me .about-me-info {
   display: flex;
-  gap: 20px;
+  gap: 10px;
 }
 
 .about-me h3 span {
@@ -413,6 +413,7 @@ section{
 
 .about-me .about-me-info .infomation ul li {
   margin: 8px 0;
+  font-size: 1.4rem;
 }
 
 .about-me .inner h4 {
