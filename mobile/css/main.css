@@ -71,7 +71,7 @@ header .inner .ham::before {
 
 #content {
   width: 100%;
-  height: 50vh;
+  height: 70vh;
   background: linear-gradient(to bottom, #000, #666);
   position: relative;
 
@@ -340,7 +340,7 @@ header .inner .ham::before {
 
 
 #content .text-box .number ul li{
-  margin-top: 10px;
+  margin-top: 30px;
   
 }
 
