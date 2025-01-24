@@ -333,7 +333,7 @@ header .inner .ham::before {
 
 #content .text-box .number ul li a {
   color: #F97316;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   letter-spacing: 1px;
   margin-top: 20px;
@@ -349,7 +349,7 @@ header .inner .ham::before {
 
 #content .text-box .number ul li a span {
   display: block;
-  font-size: 20px;
+  font-size: 1.6rem;
   margin-left: 30px;
   font-weight: 400;
   letter-spacing: 0;
