@@ -677,7 +677,7 @@ section .button a {
   color: #F97316;
   border-radius: 10px;
   text-align: center;
-  transition: all 0.5s;
+  transition: all 0.5s;              
 }
 
 section .button a:hover {
@@ -767,7 +767,7 @@ section#wedee .button{
 footer {
   width: 100%;
   background-color: #000;
-  padding-top: 50px;
+  padding: 50px 0;
 
 }
 
