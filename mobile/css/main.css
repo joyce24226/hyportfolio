@@ -135,7 +135,7 @@ header .inner .ham::before {
 }
 
 #mainpage p {
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 700;
   color: #fff;
 
@@ -261,6 +261,8 @@ header .inner .ham::before {
 #mainpage .mark {
   top: 370px;
   left: 1240px;
+  animation: possibility 0.3s 4s linear backwards;
+
 }
 
 #mainpage .name-box {
