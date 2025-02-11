@@ -667,6 +667,15 @@ section .about-me {
   margin-top: 240px;
 }
 
+.about-me-right .education ul li{
+  position: relative;
+}
+.about-me-right .education span {
+position: absolute;
+top: 0;
+right: -15%;
+}
+
 /*section img*/
 #ediya .img-box {
   position: absolute;
